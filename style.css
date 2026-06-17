@@ -1,0 +1,6 @@
+.main-page{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    transition: background 1s ease;
+}
