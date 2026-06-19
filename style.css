@@ -4,3 +4,34 @@
     flex-direction: column;
     transition: background 1s ease;
 }
+
+.main-title {
+    position: relative;
+    font-family: "eternalo", "serif";
+    font-size: 200px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: margin;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: 6px;
+}
+
+@font-face {
+    font-family: "margin";
+    src: url(fonts/Margin\ DEMO.otf);
+}
+
+
+@font-face {
+    font-family: "eternalo";
+    src: url(fonts/Eternalo.ttf);
+}

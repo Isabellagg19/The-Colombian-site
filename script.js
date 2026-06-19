@@ -1,6 +1,8 @@
 const background  =[
     'url("backgroundss/background1.png")',
-    'url("backgroundss/background2.png")'
+    'url("backgroundss/background2.png")',
+    'url("backgroundss/background3.png")',
+    'url("backgroundss/background4.png")'
 ]
 
 function getRandomBackground() {
