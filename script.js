@@ -1,14 +1,14 @@
-const colors = [
-  '#000000',
-  '#58e19ad0',
+const backgrounds = [
+  "url('backgroundss/background-colombian-site.png')",
+  "url('backgroundss/background-2.png')"
 ]
 
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      const sectionHeight = window.innerHeight;
-      const index = Math.floor(scrollY / sectionHeight);
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const sectionHeight = window.innerHeight;
+  const index = Math.floor(scrollY / sectionHeight);
 
-      if (colors [index]) {
-        document.body.style.backgroundColor = colors[index];
-      }
-    });
+  if (backgrounds[index]) {
+    document.body.style.backgroundImage = backgrounds[index];
+  }
+});

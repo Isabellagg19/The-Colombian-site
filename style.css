@@ -1,15 +1,26 @@
-.main-page{
-    background-image: url(backgroundss/background-colombian-site.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+.main-page {
+    height: 100vh;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .section{
     height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
 }
 
-.main-title {
+.header-title {
     position: relative;
     font-family: "eternalo", "serif";
     font-size: 200px;
@@ -20,17 +31,18 @@
     margin-bottom: 10px;
 }
 
-.subtitle {
-    font-family: margin;
+.header-subtitle {
+    font-family: "margin";
     font-size: 80px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 200px;
     letter-spacing: 6px;
     transition: all 0.3s ease;
+
 }
 
-.subtitle:hover {
+.header-subtitle:hover {
     transform: translateY(-15px);
 }
 
@@ -44,5 +56,17 @@
 @font-face {
     font-family: "eternalo";
     src: url(fonts/Eternalo.ttf);
+}
+
+.header {
+     background: url("backgroundss/background-colombian-site.png") no-repeat center center/cover;
+}
+
+.content {
+    background: url("backgroundss/background-2.png") no-repeat center center/cover;
+}
+
+.invisible {
+    color: transparent;
 }
 
