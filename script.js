@@ -1,14 +1,11 @@
-const backgrounds = [
-  "url('backgroundss/background-colombian-site.png')",
-  "url('backgroundss/background-2.png')"
-]
+const navBar = document.querySelector('.nav-bar');
+const leftArrow = document.querySelector('.arrow.left');
+const rightArrow = document.querySelector('.arrow.right');
 
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const sectionHeight = window.innerHeight;
-  const index = Math.floor(scrollY / sectionHeight);
+rightArrow.addEventListener('click', () => {
+  navBar.scrollBy({ left: 1000, behavior: 'smooth' });
+});
 
-  if (backgrounds[index]) {
-    document.body.style.backgroundImage = backgrounds[index];
-  }
+leftArrow.addEventListener('click', () => {
+  navBar.scrollBy({ left: -1000, behavior: 'smooth' });
 });

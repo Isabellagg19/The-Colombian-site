@@ -70,21 +70,26 @@
     color: transparent;
 }
 
-.search-bar {
+.nav-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 30px; /* espacio entre botones */
-  padding: 20px;
-  background: rgba(0,0,0,0.5); /* opcional: fondo semitransparente */
+  justify-content: center;
+  gap: 300px;
+}
+
+.nav-bar {
+  display: flex;
+  width: 1000px;
+  overflow:hidden;
   border-radius: 15px;
 }
 
 .search-button-image {
-  width: 60px;
-  height: 60px;
+  width: 500px;
+  height: 500px;
   object-fit: contain;
-  cursor: pointer;
+  background: none;
+  border: none;
   transition: transform 0.3s ease;
 }
 
@@ -92,3 +97,10 @@
   transform: scale(1.2);
 }
 
+.arrow {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
