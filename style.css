@@ -64,6 +64,7 @@
 
 .content {
     background: url("backgroundss/background-2.png") no-repeat center center/cover;
+    margin-top: -60px;
 }
 
 .invisible {
@@ -80,7 +81,7 @@
 
 .nav-bar {
   display: flex;
-  margin-top: 160px;
+  margin-top: 30px;
   margin-bottom: 160px;
   width: 900px;
   gap: 20px;
@@ -89,6 +90,7 @@
 }
 
 .search-button {
+  margin-top: -45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +98,7 @@
   text-decoration: none;
   color: white;
   font-family: "margin";
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .search-button-image {
@@ -128,17 +130,42 @@
   margin-left: -20px;
 }
 
-
-
 .arrow-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: none;
   border: none;
   background-color: transparent;
   padding: 30px;
+  transition: transform 0.3s ease;
 }
 
 .arrow-image:hover {
   transform: scale(1.1);
+}
+
+.content-title {
+  font-family: "popular";
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@font-face {
+  font-family: "popular";
+  src: url(fonts/Very\ Popular.ttf);
 }
