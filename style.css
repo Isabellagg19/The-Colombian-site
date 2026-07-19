@@ -169,3 +169,22 @@
   font-family: "popular";
   src: url(fonts/Very\ Popular.ttf);
 }
+
+.trivia-title {
+  font-family: "popular";
+  font-size: 50px;
+  text-align: center;
+  color: rgb(12, 12, 12);
+  margin-top: 100px;
+  animation: bounce 2s infinite;
+}
+
+.globe {
+  margin-left: 470px;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background: url("backgroundss/colombia.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
