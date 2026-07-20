@@ -180,11 +180,16 @@
 }
 
 .globe {
-  margin-left: 470px;
+  margin-left: 310px;
   align-items: center;
-  width: 600px;
+  width: 900px;
   height: 600px;
-  background: url("backgroundss/colombia.png") no-repeat center center;
+  background: url("backgroundss/colombiaa.png") no-repeat center center;
   background-size: cover;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.globe:hover {
+  transform:scale(1.2);
 }
