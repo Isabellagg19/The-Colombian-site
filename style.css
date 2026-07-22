@@ -64,7 +64,7 @@
 
 .content {
     background: url("backgroundss/background-2.png") no-repeat center center/cover;
-    margin-top: -60px;
+    margin-top: -15px;
 }
 
 .invisible {
@@ -179,17 +179,3 @@
   animation: bounce 2s infinite;
 }
 
-.globe {
-  margin-left: 310px;
-  align-items: center;
-  width: 900px;
-  height: 600px;
-  background: url("backgroundss/colombiaa.png") no-repeat center center;
-  background-size: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.globe:hover {
-  transform:scale(1.2);
-}
